@@ -16,11 +16,11 @@ pipeline {
             }
         }
 
-        stage('Checkout SCM') {
-            steps {
-                checkout scm
-            }
-        }
+       # stage('Checkout SCM') {
+       #     steps {
+       #         checkout scm
+       #     }
+       # }
 
         stage('Vulnerability Scan - Trivy') {
             steps {
